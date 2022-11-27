@@ -4,7 +4,6 @@
 }
 .bannerContent{
     color: var(--white-color);
-    font-size: 2vw;
     position: relative;
 }
 .bannerText{
@@ -17,10 +16,94 @@
 }
 .bannerText h1{
     color: var(--accent-color);
-    font-size: 3vw;
-    font-family: 'Nerko One', cursive;
-}
+    font-size: 4vw;
+    font-family: 'Alfa Slab One', cursive;
+}   
 .bannerText h2{
     color: var(--white-color);
     font-size: 1.25vw;
+    font-family: 'Gentium Book Basic', serif;
+}
+.bannerText button{
+    font-size: 0.85vw;
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    padding: 0.75vw 1.25vw;
+    border-radius: 1.5vw;
+    margin-top: 1vw;
+}
+@keyframes Rotation {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(90deg);}
+}
+@keyframes RotationOutOfHover{
+    0%{transform: rotate(90deg);}
+    100%{transform: rotate(0deg);}
+}
+@media screen and (max-width: 1366px) {
+    .bannerText{
+        width: 30vw;
+    }
+    .bannerText h1{
+        font-size: 4.5vw;
+    }   
+    .bannerText h2{
+        font-size: 1.5vw;
+    }
+    .bannerText button{
+        font-size: 1.15vw;
+        padding: 0.75vw 1.25vw;
+        border-radius: 1.75vw;
+        margin-top: 0.85vw;
+    }
+}
+@media screen and (max-width: 768px) {
+    .bannerText{
+        width: 35vw;
+    }
+    .bannerText h1{
+        font-size: 5vw;
+    }   
+    .bannerText h2{
+        font-size: 1.75vw;
+    }
+    .bannerText button{
+        font-size: 1.5vw;
+        padding: 1vw 1.5vw;
+        border-radius: 2vw;
+        margin-top: 1vw;
+    }
+}
+@media screen and (max-width: 768px) {
+    .banner img {
+        display: none;
+    }
+    .banner{
+        background-image: url("../images/banner.jpg");
+        background-size: cover;
+    }
+    .bannerText{
+        position: relative;
+        transform: none;
+        margin: auto;
+        left: 0;
+        top: 0;
+        padding: 10vw 0vw;
+        text-align: center;
+    }
+    .bannerText{
+        width: 90vw;
+    }
+    .bannerText h1{
+        font-size: 7.5vw;
+    }   
+    .bannerText h2{
+        font-size: 3vw;
+    }
+    .bannerText button{
+        font-size: 2.5vw;
+        padding: 1.5vw 2vw;
+        border-radius: 20vw;
+        margin-top: 2vw;
+    }
 }
