@@ -1,0 +1,26 @@
+.banner img{
+    width: 100%;
+    height: auto;
+}
+.bannerContent{
+    color: var(--white-color);
+    font-size: 2vw;
+    position: relative;
+}
+.bannerText{
+    width: 30vw;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    opacity: 0.75;
+}
+.bannerText h1{
+    color: var(--accent-color);
+    font-size: 3vw;
+    font-family: 'Nerko One', cursive;
+}
+.bannerText h2{
+    color: var(--white-color);
+    font-size: 1.25vw;
+}

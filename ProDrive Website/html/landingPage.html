@@ -10,32 +10,44 @@
     <link rel="stylesheet" href="../css/landingPage.css">
     <link rel="stylesheet" href="../css/root.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
 </head>
 <body>
- 
-  <nav>
-    <ul class="menu">
-        <li><a href="#"><img src="../images/ProDrive Logo Transparent background White Text.png" alt=""></a></li>
-      <div class="navLinks" id="navLinks">
-        <li class="item"><a href="#">Home</a></li>
-        <li class="item"><a href="#">About</a></li>
-        <li class="item"><a href="#">Blog</a></li>
-        <li class="item"><a href="#">Contact</a></li>
+<nav>
+    <div class="logo">
+      <a href="../html/landingPage.html"><img src="../images/ProDrive Logo Transparent background White Text.png" alt="logo"></a>
     </div>
-    <div class="quickAction">
-    <li class="signIn text-xl md:text-lg sm:text-md"><a href="#">Sign In</a></li>  
-    <li><a href="#" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a></li>
+    <div class="navLinks" id="menuId">
+      <a href="#" class="navItems">Home</a>
+      <a href="#" class="navItems">Blog</a>
+      <a href="#" class="navItems">Contact</a>
+      <a href="#" class="navItems">About</a>
+    </div>
+    <div class="callToAction">
+      <a href="#">Sign In</a>
+      <button class="bars" onclick="myFunction()"><i class="fa fa-bars"></i></button>
+    </div>
+</nav>
+
+<section class="banner">
+  <div class="bannerContent">
+    <img src="../images/banner.jpg" alt="banner image">
+    <div class="bannerText">
+    <h1><span>ProDrive</span></h1>
+    <h2>With a great collection of cars, <i>ProDrive</i> teaches you how to become a better driver in both automatic and manual transmission.</h2>
   </div>
-    </ul>    
- 
-  </nav>
+  </div>
+</section>
+
 <script>
-  function myFunction() {
-  var x = document.getElementById("navLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
+function myFunction() {
+  var x = document.getElementById("menuId");
+  if (x.className === "navLinks") {
+    x.className += "Responsive";
   } else {
-    x.style.display = "block";
+    x.className = "navLinks";
   }
 }
 </script>
