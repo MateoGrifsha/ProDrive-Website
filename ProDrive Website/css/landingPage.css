@@ -1,109 +1,41 @@
-.banner img{
+.banner{
+    background-image: url("../images/homeBanner.jpg");
+    background-size: cover;
     width: 100%;
-    height: auto;
+    height: 93.35vh;
 }
-.bannerContent{
-    color: var(--white-color);
-    position: relative;
+.banner h1{
+    color: white;
+    width: 40%;
+    font-family: 'Poller One', cursive;
+    font-weight: 900;
 }
-.bannerText{
-    width: 30vw;
-    position: absolute;
-    top: 50%;
-    left: 20%;
-    transform: translate(-50%, -50%);
-    opacity: 0.75;
+.banner p{
+    color: silver;
+    width: 45%;
 }
-.bannerText h1{
-    color: var(--accent-color);
-    font-size: 4vw;
-    font-family: 'Alfa Slab One', cursive;
-}   
-.bannerText h2{
-    color: var(--white-color);
-    font-size: 1.25vw;
-    font-family: 'Gentium Book Basic', serif;
+
+#aboutUs{
+    width: 100%;
+    height: 93.35vh;
+    background-color: blue;  
 }
-.bannerText button{
-    font-size: 0.85vw;
-    background-color: var(--accent-color);
-    color: var(--white-color);
-    padding: 0.75vw 1.25vw;
-    border-radius: 1.5vw;
-    margin-top: 1vw;
+#contactUs{
+    width: 100%;
+    height: 93.35vh;
+    background-color: rgb(124, 93, 145);  
 }
-@keyframes Rotation {
-    0%{transform: rotate(0deg);}
-    100%{transform: rotate(90deg);}
+
+#contactUs i {
+    color:  rgb(116, 22, 180);  
 }
-@keyframes RotationOutOfHover{
-    0%{transform: rotate(90deg);}
-    100%{transform: rotate(0deg);}
+.socials i:hover {
+    color: black;
+    background-color: white;
+    border-radius: 50%;
+    padding: 1px;
 }
-@media screen and (max-width: 1366px) {
-    .bannerText{
-        width: 30vw;
-    }
-    .bannerText h1{
-        font-size: 4.5vw;
-    }   
-    .bannerText h2{
-        font-size: 1.5vw;
-    }
-    .bannerText button{
-        font-size: 1.15vw;
-        padding: 0.75vw 1.25vw;
-        border-radius: 1.75vw;
-        margin-top: 0.85vw;
-    }
-}
-@media screen and (max-width: 768px) {
-    .bannerText{
-        width: 35vw;
-    }
-    .bannerText h1{
-        font-size: 5vw;
-    }   
-    .bannerText h2{
-        font-size: 1.75vw;
-    }
-    .bannerText button{
-        font-size: 1.5vw;
-        padding: 1vw 1.5vw;
-        border-radius: 2vw;
-        margin-top: 1vw;
-    }
-}
-@media screen and (max-width: 768px) {
-    .banner img {
-        display: none;
-    }
-    .banner{
-        background-image: url("../images/banner.jpg");
-        background-size: cover;
-    }
-    .bannerText{
-        position: relative;
-        transform: none;
-        margin: auto;
-        left: 0;
-        top: 0;
-        padding: 10vw 0vw;
-        text-align: center;
-    }
-    .bannerText{
-        width: 90vw;
-    }
-    .bannerText h1{
-        font-size: 7.5vw;
-    }   
-    .bannerText h2{
-        font-size: 3vw;
-    }
-    .bannerText button{
-        font-size: 2.5vw;
-        padding: 1.5vw 2vw;
-        border-radius: 20vw;
-        margin-top: 2vw;
-    }
+@media screen and (max-width: 820px){
+    .banner h1{ width: 80%;}
+    .banner p{width: 70%;}
 }
