@@ -126,10 +126,10 @@ body {
     pointer-events: none;
 }
 
-.contactUsContainer .row100 .col .inputBox input:focus + .text,
-.contactUsContainer .row100 .col .inputBox input:valid + .text,
-.contactUsContainer .row100 .col .inputBox textarea:focus + .text,
-.contactUsContainer .row100 .col .inputBox textarea:valid + .text  {
+.contactUsContainer .row100 .col .inputBox input:focus+.text,
+.contactUsContainer .row100 .col .inputBox input:valid+.text,
+.contactUsContainer .row100 .col .inputBox textarea:focus+.text,
+.contactUsContainer .row100 .col .inputBox textarea:valid+.text {
     top: -35px;
     left: 0;
 }
@@ -146,8 +146,8 @@ body {
     pointer-events: none;
 }
 
-.contactUsContainer .row100 .col .inputBox input:focus ~ .line,
-.contactUsContainer .row100 .col .inputBox input:valid ~ .line {
+.contactUsContainer .row100 .col .inputBox input:focus~.line,
+.contactUsContainer .row100 .col .inputBox input:valid~.line {
     height: 100%;
 }
 
@@ -158,8 +158,8 @@ body {
     padding: 10px 0;
 }
 
-.contactUsContainer .row100 .col .inputBox textarea:focus ~ .line,
-.contactUsContainer .row100 .col .inputBox textarea:valid ~ .line {
+.contactUsContainer .row100 .col .inputBox textarea:focus~.line,
+.contactUsContainer .row100 .col .inputBox textarea:valid~.line {
     height: 100%;
 }
 

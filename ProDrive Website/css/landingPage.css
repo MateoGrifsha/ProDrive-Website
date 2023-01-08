@@ -1,55 +1,70 @@
-.banner{
+.banner {
     background-image: url("../images/homeBanner.jpg");
     background-size: cover;
     width: 100%;
     height: 93.35vh;
 }
-.banner h1{
+
+.banner h1 {
     color: white;
     width: 40%;
     font-family: 'Poller One', cursive;
     font-weight: 900;
 }
-.banner p{
+
+.banner p {
     color: silver;
     width: 45%;
 }
 
-#aboutUs{
+#aboutUs {
     width: 100%;
-    height: 100vh;
-    background-color: whitesmoke;  
+    height: auto;
+    min-height: 100vh;
+    background-color: whitesmoke;
+    z-index: 9999;
 }
-#contactUs{
+
+#contactUs {
     width: 100%;
-    height: 100vh;
-    background-color: lightskyblue;  
+    height: auto;
+    background-color: lightskyblue;
 }
+
 .contacts i {
-    color:  lightskyblue;  
+    color: lightskyblue;
 }
-.form{
-   background-color: navy;
+
+.form {
+    background-color: navy;
 }
+
 .socials i {
     padding: 5px 10px;
     color: white;
 }
+
 .socials i:hover {
     background-color: lightskyblue;
     border-radius: 50%;
 }
 
 .carousel-control-next,
-.carousel-control-prev ,
- .carousel-indicators {
+.carousel-control-prev,
+.carousel-indicators {
     filter: invert(100%);
 }
 
-.aboutUsHeading{
-    font-family: "candara"  ;
+.aboutUsHeading {
+    font-family: "candara";
 }
-@media screen and (max-width: 820px){
-    .banner h1{ width: 80%;}
-    .banner p{width: 70%;}
+
+@media screen and (max-width: 820px) {
+    .banner h1 {
+        width: 80%;
+    }
+
+    .banner p {
+        width: 70%;
+    }
 }
