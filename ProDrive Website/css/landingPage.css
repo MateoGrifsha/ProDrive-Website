@@ -22,13 +22,14 @@
     height: auto;
     min-height: 100vh;
     background-color: whitesmoke;
-    z-index: 9999;
+    z-index: 9999 !important;
 }
 
 #contactUs {
     width: 100%;
-    height: auto;
+    height: 150vh;
     background-color: lightskyblue;
+    z-index: 0 !important;
 }
 
 .contacts i {
@@ -47,6 +48,10 @@
 .socials i:hover {
     background-color: lightskyblue;
     border-radius: 50%;
+}
+
+.footer {
+    z-index: 999 !important;
 }
 
 .carousel-control-next,
