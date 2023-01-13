@@ -13,12 +13,28 @@ body {
     background-size: cover;
     background-position: center;
     /* filter: brightness(40%); */
-    height: 100vh;
+    height: 90vh;
     padding: 0;
     margin: 0;
 }
 
-h1 {
-    font-family: "acumin-pro", sans-serif;
-    font-weight: bolder;
+#downloadBanner h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+#downloadBanner p {
+    font-size: 2vw !important;
+}
+
+#FAQ {
+    margin-top: 3vw;
+    background-color: whitesmoke;
+}
+
+#downloadSection {
+    background-image: url("../images/downloadBanner.jpg");
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
 }
