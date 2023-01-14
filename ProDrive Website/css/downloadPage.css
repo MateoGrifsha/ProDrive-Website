@@ -33,8 +33,20 @@ body {
 }
 
 #downloadSection {
-    background-image: url("../images/downloadBanner.jpg");
+    background-image: url("../images/f40.jpg");
     background-size: cover;
+    background-position: center;
     height: 100vh;
     width: 100%;
+}
+
+#downloadSection h1 {
+    width: 40vw;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+}
+
+#downloadSection p {
+    width: 42.5vw;
+    font-weight: 500;
 }

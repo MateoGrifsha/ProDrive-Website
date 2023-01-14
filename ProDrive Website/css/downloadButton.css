@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+.button_slide {
+    color: #FFF;
+    background-color: transparent;
+    border: 4px solid white;
+    border-radius: 0px;
+    padding: 1vw 2vw;
+    display: inline-block;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.25rem;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #81080c;
+    -webkit-transition: ease-out 1s;
+    -moz-transition: ease-out 1s;
+    transition: ease-out 1s;
+}
+
+.button_slide:hover {
+    box-shadow: inset 400px 0 0 0 #db3a3f;
+}
