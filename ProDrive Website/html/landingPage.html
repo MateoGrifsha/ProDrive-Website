@@ -32,7 +32,7 @@
 
 <body>
   <!-- Navbar -->
-  <nav class="myNav navbar navbar-dark text-bg-dark navbar-expand-md sticky-top text-center ">
+  <nav class="myNav navbar navbar-dark text-bg-dark navbar-expand-md sticky-top text-center " id="myNav">
     <div class="container-fluid">
       <a href="../html/landingPage.html" class="navbar-brand ms-2"><img class="img-fluid"
           src="../images/ProDrive Logo Transparent background White Text.png" alt="logo"></a>
@@ -118,14 +118,14 @@
         <div class="row100">
           <div class="col">
             <div class="inputBox">
-              <input type="text" name="" required="required">
+              <input type="text" name="" id="contactName" required="required">
               <span class="text">First Name</span>
               <span class="line"></span>
             </div>
           </div>
           <div class="col">
             <div class="inputBox">
-              <input type="text" name="" required="required">
+              <input type="text" name="" id="contactLastName" required="required">
               <span class="text">Last Name</span>
               <span class="line"></span>
             </div>
@@ -134,14 +134,14 @@
         <div class="row100">
           <div class="col">
             <div class="inputBox">
-              <input type="text" name="" required="required">
+              <input type="text" name="" id="contactEmail" required="required">
               <span class="text">Email</span>
               <span class="line"></span>
             </div>
           </div>
           <div class="col">
             <div class="inputBox">
-              <input type="text" name="" required="required">
+              <input type="text" name="" id="contactMobile" required="required">
               <span class="text">Mobile</span>
               <span class="line"></span>
             </div>
@@ -150,7 +150,7 @@
         <div class="row100">
           <div class="col">
             <div class="inputBox textarea">
-              <textarea name="" required="required"></textarea>
+              <textarea name="" id="contactMessage" required="required"></textarea>
               <span class="text">Type Your Message Here...</span>
               <span class="line"></span>
             </div>
@@ -165,11 +165,6 @@
       </div>
     </section>
   </div>
-  </div>
-  </div>
-
-
-
 
 
 
@@ -223,7 +218,7 @@
         </div>
 
         <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-          <p>&copy; 2022 Company, Inc. All rights reserved.</p>
+          <p>&copy; <span id="year"></span> ProDrive, All rights reserved.</p>
           <ul class="list-unstyled d-flex">
             <li class="ms-3"><a class="link-dark" href="https://www.instagram.com"><i
                   class="bi bi-instagram fs-3 me-3"></i></a></li>
@@ -247,7 +242,10 @@
     $(window).on("load", function () {
       $(".spinner").fadeOut("slow");
     });
+    var currentYear = (new Date).getFullYear();
+    $("#year").text(" " + currentYear + " ");
   </script>
+  <script src="../js/contactUs.js"></script>
 </body>
 
 </html>

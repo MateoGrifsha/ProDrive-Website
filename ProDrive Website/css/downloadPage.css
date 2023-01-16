@@ -9,10 +9,6 @@ body {
 }
 
 #downloadBanner {
-    background-image: url('../images/downloadVid.gif');
-    background-size: cover;
-    background-position: center;
-    /* filter: brightness(40%); */
     height: 90vh;
     padding: 0;
     margin: 0;
@@ -49,4 +45,14 @@ body {
 #downloadSection p {
     width: 42.5vw;
     font-weight: 500;
+}
+
+#myVideo {
+    filter: brightness(40%);
+    position: absolute;
+    z-index: -999;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
 }
