@@ -1,3 +1,20 @@
+@keyframes background-pan {
+    from {
+      background-position: 0% center;
+    }
+    
+    to {
+      background-position: -200% center;
+    }
+  }
+.magic-text{
+    animation: background-pan 3s linear infinite;
+    background: linear-gradient(to right, #c80303, #b62222, #fe4848, #c80303);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+}
 .banner {
     background-image: url("../images/homeBanner.jpg");
     background-size: cover;

@@ -11,6 +11,7 @@
   <!-- Custom Styling -->
   <link rel="stylesheet" href="../css/landingPage.css">
   <link rel="stylesheet" href="../css/contactUs.css">
+  <link rel="stylesheet" href="../css/root.css">
   <!-- Bootstrap CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -57,7 +58,7 @@
     <section id="home">
       <div class="banner d-flex align-items-center">
         <div class="bannerText ms-5 border-start border-2 ps-5">
-          <h1 class="display-4">Driving is not <span class="text-danger">hard</span> when you have fun...</h1>
+          <h1 class="display-4">Driving is not <span class="magic-text">hard</span> when you have fun...</h1>
           <p class="lead fs-6">Preparing the best drivers to hit the road using stimulated test that students can take
             from their own computer. Become a part of ProDrive!</p>
           <button class="btn btn-danger"><a href="../html/downloadPage.html#downloadSection"
@@ -81,26 +82,26 @@
     <section id="aboutUs" class="  d-flex justify-content-center align-items-center">
 
       <div class="container py-5 text-bg-dark rounded-3 my-5 ">
-        <div class="display-3 fw-bold text-center pb-5">Learning made <span class="text-warning">for
+        <div class="display-3 fw-bold text-center pb-5" id="slideAnimation">Learning made <span class="text-warning">for
             everyone</span></div>
         <div class="row col-md-12">
           <div class="col-md-6">
             <div class="d-flex align-items-center">
               <i class="bi bi-circle-fill float-start px-3 text-xl"></i>
-              <div class="h2 fw-bold aboutUsHeading m-0">For students</div>
+              <div class="h2 fw-bold aboutUsHeading m-0 hidden">For students</div>
             </div>
-            <p class="px-5 lead">Using ProDrive helps students enrolled in driving school to get used to driving
+            <p class="px-5 lead hidden">Using ProDrive helps students enrolled in driving school to get used to driving
               a car. Get ProDrive for Windows on the download tab on our website. Become a part into a community of
               great drives.</p>
             <div class="d-flex align-items-center"><i class="bi bi-circle-fill float-start px-3 text-xl"></i>
-              <div class="h2 fw-bold aboutUsHeading m-0">For teachers</div>
+              <div class="h2 fw-bold aboutUsHeading m-0 hidden">For teachers</div>
             </div>
-            <p class="px-5 lead">Teachers all around different driving schools can use ProDrive to make their job a
+            <p class="px-5 lead hidden">Teachers all around different driving schools can use ProDrive to make their job a
               whole lot easier. ProDrive enables teachers to efficiently teach driving to new students from the safety
               of their class.</p>
           </div>
           <div class="col-md-6">
-            <img src="../images/aboutUsPhoto.jpg" class="rounded mx-auto d-block img-fluid" alt="...">
+            <img src="../images/aboutUsPhoto.jpg" class="rounded mx-auto d-block img-fluid hidden" alt="...">
           </div>
         </div>
       </div>
@@ -243,6 +244,7 @@
     $("#year").text(" " + currentYear + " ");
   </script>
   <script src="../js/contactUs.js"></script>
+  <script src="../js/animateOnScroll.js"></script>
 </body>
 
 </html>

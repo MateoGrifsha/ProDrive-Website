@@ -11,6 +11,15 @@ body {
     overflow-x: hidden;
 }
 
+@keyframes rotate {
+    0%{
+        transform: rotate('0deg');
+    }
+    100%{
+        transform: rotate('360deg');
+    }
+}
+
 #contactUs {
     display: flex;
     justify-content: center;
@@ -20,6 +29,7 @@ body {
     padding: 20px;
     background: #20123c;
     z-index: 0 !important;
+    position: relative;
 }
 
 #contactUs::before {
@@ -29,8 +39,10 @@ body {
     height: 400px;
     background: linear-gradient(to bottom right, #19142d, #463b5b);
     border-radius: 50%;
-    transform: translate(-420px, -180px);
+    left: 15%;
+    top: 15%;
     z-index: 0 !important;
+    animation: rotate 3s linear infinite;
 }
 
 #contactUs::after {
@@ -41,6 +53,7 @@ body {
     background: linear-gradient(to top left, #1a132b, #5f5278);
     border-radius: 50%;
     transform: translate(400px, 180px);
+    /* animation: rotate 3s linear infinite; */
 }
 
 .contactUsContainer {

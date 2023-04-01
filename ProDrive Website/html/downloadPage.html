@@ -11,6 +11,7 @@
     <!-- Custom Styling -->
     <link rel="stylesheet" href="../css/downloadPage.css">
     <link rel="stylesheet" href="../css/downloadButton.css">
+    <link rel="stylesheet" href="../css/root.css">
     <!-- Bootstrap CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -63,11 +64,11 @@
         <video autoplay muted loop id="myVideo">
             <source src="../images/downloadVid.mp4" type="video/mp4">
         </video>
-        <div class="container text-center text-light">
-            <h1 class="display-1 fw-bold">TEACH.</h1>
-            <h1 class="display-1 fw-bold">LEARN.</h1>
-            <h1 class="display-1 fw-bold">DRIVE.</h1>
-            <p class="lead">Welcome to the ProDrive, your home for becoming a better driver.
+        <div class="container text-center text-light hidden">
+            <h1 class="display-1 fw-bold textSlide">TEACH.</h1>
+            <h1 class="display-1 fw-bold textSlide">LEARN.</h1>
+            <h1 class="display-1 fw-bold textSlide">DRIVE.</h1>
+            <p class="lead textSlide">Welcome to the ProDrive, your home for becoming a better driver.
             </p>
         </div>
     </section>
@@ -230,6 +231,7 @@
         var currentYear = (new Date).getFullYear();
         $("#year").text(" " + currentYear + " ");
     </script>
+    <script src="../js/animateOnScroll.js"></script>
 </body>
 
 </html>
