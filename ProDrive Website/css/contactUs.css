@@ -192,11 +192,11 @@ body {
 
 @media screen and (max-width: 768px) {
     #contactUs::before {
-        transform: translate(-200px, -180px);
+        transform: translate(-200px, -80px);
     }
 
     #contactUs::after {
-        transform: translate(220px, 180px);
+        display: none;
     }
 
     .contactUsContainer {

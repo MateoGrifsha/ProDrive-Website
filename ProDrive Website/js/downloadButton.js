@@ -1,5 +1,6 @@
 var computerButton = document.getElementById("computerButton");
 var mobileButton = document.getElementById("mobileButton");
+var contact = document.getElementById("contactUs");
 
 function isMobile(){
     return /Android|iPhone/i.test(navigator.userAgent);
