@@ -144,10 +144,15 @@
             <h1 class="h1 mt-5 mb-2">Become a part of our driving community.</h1>
             <p class="lead mb-3">Download now to become a part of a fast growing community of new drivers to gain
                 experience on the road.</p>
-            <button class="button_slide"><a
+            <button class="button_slide" id="computerButton"><a
                     href="https://www.dropbox.com/s/yz517mbkh16skne/ProDrive%20Launcher.zip?dl=0"
                     download="Prodrive Launcher" style="color: white; text-decoration:none;">DOWNLOAD
-                    <em>ProDrive</em></a></button>
+            <em>ProDrive</em></a></button>  
+
+            <button class="button_slide" id="mobileButton"><a
+                    href="https://www.dropbox.com/s/yz517mbkh16skne/ProDrive%20Launcher.zip?dl=0"
+                    download="Prodrive Launcher" style="color: white; text-decoration:none;">GET
+                    <em>ProDrive</em> ON ANDROID</a></button>  
         </div>
     </section>
 
@@ -180,12 +185,12 @@
                     <div class="col-6 col-md-2 mb-3">
                         <h5>Socials</h5>
                         <ul class="nav flex-column">
-                            <li class="nav-item mb-2"><a href="https://www.instagram.com"
+                            <li class="nav-item mb-2"><a target="_blank" href="https://www.instagram.com/prodriveapp/"
                                     class="nav-link p-0 text-muted">Instagram</a></li>
-                            <li class="nav-item mb-2"><a href="https://www.facebook.com"
+                            <li class="nav-item mb-2"><a target="_blank" href="https://www.facebook.com/profile.php?id=100091322331078"
                                     class="nav-link p-0 text-muted">Facebook</a>
                             </li>
-                            <li class="nav-item mb-2"><a href="https://www.twitter.com"
+                            <li class="nav-item mb-2"><a target="_blank" href="https://www.twitter.com/prodrivegame"
                                     class="nav-link p-0 text-muted">Twitter</a>
                             </li>
                         </ul>
@@ -207,11 +212,11 @@
                 <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
                     <p>&copy; <span id="year"></span> ProDrive, All rights reserved.</p>
                     <ul class="list-unstyled d-flex">
-                        <li class="ms-3"><a class="link-dark" href="https://www.instagram.com"><i
+                        <li class="ms-3"><a class="link-dark" target="_blank" href="https://www.instagram.com/prodriveapp/"><i
                                     class="bi bi-instagram fs-3 me-3"></i></a></li>
-                        <li class="ms-3"><a class="link-dark" href="https://www.twitter.com"><i
+                        <li class="ms-3"><a class="link-dark" target="_blank" href="https://www.twitter.com/prodrivegame"><i
                                     class="bi bi-twitter fs-3 me-3"></i></svg></a></li>
-                        <li class="ms-3"><a class="link-dark" href="https://www.facebook.com"><i
+                        <li class="ms-3"><a class="link-dark" target="_blank" href="https://www.facebook.com/profile.php?id=100091322331078"><i
                                     class="bi bi-facebook fs-3 me-3"></i></a></li>
                     </ul>
                 </div>
@@ -232,6 +237,7 @@
         $("#year").text(" " + currentYear + " ");
     </script>
     <script src="../js/animateOnScroll.js"></script>
+    <script src="../js/downloadButton.js"></script>
 </body>
 
 </html>
